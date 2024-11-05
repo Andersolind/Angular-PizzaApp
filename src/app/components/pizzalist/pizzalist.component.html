@@ -1,0 +1,44 @@
+<div>
+    @if (showSpinner()) {
+    <mat-spinner />
+    } @else {
+    <div class="albums-container">
+        @for (pizza of pizzas(); track pizza.id) {
+        <div>
+            <mat-card>
+                <img [src]="pizza.image" [alt]="pizza.name" height="150" />
+                <div class="album-content">
+                    <div>
+                        <mat-card-title>{{ pizza.name }}</mat-card-title>
+                        <p><strong>Size:</strong> {{ pizza.size }}</p>
+                        <mat-card-subtitle>Price {{ pizza.price | currency }}</mat-card-subtitle>
+                        <mat-card-subtitle> {{ pizza.pizza| currency }}</mat-card-subtitle>
+                    </div>
+
+                    <div class="album-info">
+                        <p>
+                            <strong>Toppings : </strong>
+                            @for(topping of pizza.toppings; track $index ){
+                            {{topping.name}}
+                            {{totalToppings(pizza)}}
+                            }
+
+                        </p>
+                        <P>With Toppings: {{this.toppingsTotal | currency}}</P>
+                        <mat-card-subtitle>Final Price {{finalPrice | currency }}</mat-card-subtitle>
+
+                    </div> 
+                    <a (click)="addToCart(pizza)" mat-button color="primary" routerLink="/">
+                    Add
+                </a>
+                </div>
+               
+            </mat-card>
+
+        </div>
+
+
+        }
+    </div>
+    }
+</div>

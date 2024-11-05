@@ -1,0 +1,22 @@
+<ngrx-header/>
+<div>
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side">
+      <app-cart/>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      
+      <p><button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button></p>
+      <app-pizzalist
+      [pizzas]="store.filteredAlbums()"
+      [showSpinner]="store.showSpinner()"
+      (handleAdd)="addItemToCart($event)"
+    />
+     
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+ 
+   
+</div>
+<ngrx-footer />

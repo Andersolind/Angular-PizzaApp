@@ -1,0 +1,624 @@
+{
+    "pizzas": [
+        {
+            "id": 11,
+            "name": "Mr. Nice",
+            "init": "v",
+            "isVegetarian": "Veg",
+            "image": "1.png",
+            "price": 5,
+            "base": "Thin crust",
+            "type": "Cheese burst",
+            "size": "Small",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Tomatoes",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Onions",
+                    "price": "0.50"
+                },
+                {
+                    "name": "Bell Pepper",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Mushrooms",
+                    "price": "1.20"
+                },
+                {
+                    "name": "Pineapple",
+                    "price": "0.75"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Narco",
+            "init": "v",
+            "isVegetarian": "Veg",
+            "image": "2.png",
+            "price": 7,
+            "base": "Multigrain",
+            "type": "Cheese burst",
+            "size": "Medium",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Tomatoes",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Onions",
+                    "price": "0.50"
+                },
+                {
+                    "name": "Bell Pepper",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Mushrooms",
+                    "price": "1.20"
+                },
+                {
+                    "name": "Pineapple",
+                    "price": "0.75"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Bombasto",
+            "init": "n",
+            "isVegetarian": "Non Veg",
+            "image": "3.png",
+            "price": 5,
+            "base": "Regular base",
+            "type": "Cheese burst",
+            "size": "Small",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Sausage",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Pepperoni",
+                    "price": "2.00"
+                },
+                {
+                    "name": "Barbecue Chicken",
+                    "price": "3.00"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Celeritas",
+            "init": "v",
+            "isVegetarian": "Veg",
+            "image": "4.png",
+            "price": 7,
+            "base": "Flat bread",
+            "type": "Cheese burst",
+            "size": "Medium",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Tomatoes",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Onions",
+                    "price": "0.50"
+                },
+                {
+                    "name": "Bell Pepper",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Mushrooms",
+                    "price": "1.20"
+                },
+                {
+                    "name": "Pineapple",
+                    "price": "0.75"
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Magneta",
+            "init": "v",
+            "isVegetarian": "Veg",
+            "image": "5.png",
+            "price": 5,
+            "base": "Thin crust",
+            "type": "Cheese burst",
+            "size": "Small",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Tomatoes",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Onions",
+                    "price": "0.50"
+                },
+                {
+                    "name": "Bell Pepper",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Mushrooms",
+                    "price": "1.20"
+                },
+                {
+                    "name": "Pineapple",
+                    "price": "0.75"
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "name": "RubberMan",
+            "init": "n",
+            "isVegetarian": "Non Veg",
+            "image": "6.png",
+            "price": 8,
+            "base": "Flat bread",
+            "type": "Cheese burst",
+            "size": "Large",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Sausage",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Pepperoni",
+                    "price": "2.00"
+                },
+                {
+                    "name": "Barbecue Chicken",
+                    "price": "3.00"
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Dynama",
+            "init": "v",
+            "isVegetarian": "Veg",
+            "image": "7.png",
+            "price": 7,
+            "base": "Thin crust",
+            "type": "No Cheese",
+            "size": "Medium",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Tomatoes",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Onions",
+                    "price": "0.50"
+                },
+                {
+                    "name": "Bell Pepper",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Mushrooms",
+                    "price": "1.20"
+                },
+                {
+                    "name": "Pineapple",
+                    "price": "0.75"
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Dr IQ",
+            "init": "n",
+            "isVegetarian": "Non Veg",
+            "image": "8.png",
+            "price": 9,
+            "base": "Multigrain",
+            "type": "Cheese burst",
+            "size": "Extra Large",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Sausage",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Pepperoni",
+                    "price": "2.00"
+                },
+                {
+                    "name": "Barbecue Chicken",
+                    "price": "3.00"
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "name": "Magma",
+            "init": "v",
+            "isVegetarian": "Veg",
+            "image": "1.png",
+            "price": 5,
+            "base": "Thin crust",
+            "type": "Cheese burst",
+            "size": "Large",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Tomatoes",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Onions",
+                    "price": "0.50"
+                },
+                {
+                    "name": "Bell Pepper",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Mushrooms",
+                    "price": "1.20"
+                },
+                {
+                    "name": "Pineapple",
+                    "price": "0.75"
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "name": "Tornado",
+            "init": "v",
+            "isVegetarian": "Veg",
+            "image": "2.png",
+            "price": 5,
+            "base": "Flat bread",
+            "type": "Cheese Topping",
+            "size": "Large",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Tomatoes",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Onions",
+                    "price": "0.50"
+                },
+                {
+                    "name": "Bell Pepper",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Mushrooms",
+                    "price": "1.20"
+                },
+                {
+                    "name": "Pineapple",
+                    "price": "0.75"
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "name": "Mr. Nice",
+            "init": "v",
+            "isVegetarian": "Veg",
+            "image": "1.png",
+            "price": 5,
+            "base": "Thin crust",
+            "type": "Cheese burst",
+            "size": "Large",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Tomatoes",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Onions",
+                    "price": "0.50"
+                },
+                {
+                    "name": "Bell Pepper",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Mushrooms",
+                    "price": "1.20"
+                },
+                {
+                    "name": "Pineapple",
+                    "price": "0.75"
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "name": "Narco",
+            "init": "v",
+            "isVegetarian": "Veg",
+            "image": "2.png",
+            "price": 7,
+            "base": "Multigrain",
+            "type": "Cheese burst",
+            "size": "Medium",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Tomatoes",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Onions",
+                    "price": "0.50"
+                },
+                {
+                    "name": "Bell Pepper",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Mushrooms",
+                    "price": "1.20"
+                },
+                {
+                    "name": "Pineapple",
+                    "price": "0.75"
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "name": "Bombasto",
+            "init": "n",
+            "isVegetarian": "Non Veg",
+            "image": "3.png",
+            "price": 9,
+            "base": "Regular base",
+            "type": "Cheese burst",
+            "size": "Extra Large",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Sausage",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Pepperoni",
+                    "price": "2.00"
+                },
+                {
+                    "name": "Barbecue Chicken",
+                    "price": "3.00"
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "name": "Celeritas",
+            "init": "v",
+            "isVegetarian": "Veg",
+            "image": "4.png",
+            "price": 7,
+            "base": "Flat bread",
+            "type": "Cheese burst",
+            "size": "Medium",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Tomatoes",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Onions",
+                    "price": "0.50"
+                },
+                {
+                    "name": "Bell Pepper",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Mushrooms",
+                    "price": "1.20"
+                },
+                {
+                    "name": "Pineapple",
+                    "price": "0.75"
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "name": "Magneta",
+            "init": "n",
+            "isVegetarian": "Non Veg",
+            "image": "5.png",
+            "price": 5,
+            "base": "Thin crust",
+            "type": "Cheese burst",
+            "size": "Small",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Sausage",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Pepperoni",
+                    "price": "2.00"
+                },
+                {
+                    "name": "Barbecue Chicken",
+                    "price": "3.00"
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "name": "RubberMan",
+            "init": "v",
+            "isVegetarian": "Veg",
+            "image": "6.png",
+            "price": 8,
+            "base": "Flat bread",
+            "type": "Cheese burst",
+            "size": "Large",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Tomatoes",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Onions",
+                    "price": "0.50"
+                },
+                {
+                    "name": "Bell Pepper",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Mushrooms",
+                    "price": "1.20"
+                },
+                {
+                    "name": "Pineapple",
+                    "price": "0.75"
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "name": "Dynama",
+            "init": "v",
+            "isVegetarian": "Veg",
+            "image": "7.png",
+            "price": 5,
+            "base": "Regular base",
+            "type": "Cheese burst",
+            "size": "Medium",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Tomatoes",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Onions",
+                    "price": "0.50"
+                },
+                {
+                    "name": "Bell Pepper",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Mushrooms",
+                    "price": "1.20"
+                },
+                {
+                    "name": "Pineapple",
+                    "price": "0.75"
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "name": "Dr IQ",
+            "init": "n",
+            "isVegetarian": "Veg",
+            "image": "8.png",
+            "price": 9,
+            "base": "Multigrain",
+            "type": "Cheese burst",
+            "size": "Extra Large",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Tomatoes",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Onions",
+                    "price": "0.50"
+                },
+                {
+                    "name": "Bell Pepper",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Mushrooms",
+                    "price": "1.20"
+                },
+                {
+                    "name": "Pineapple",
+                    "price": "0.75"
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "name": "Magma",
+            "init": "v",
+            "isVegetarian": "Veg",
+            "image": "1.png",
+            "price": 5,
+            "base": "Thin crust",
+            "type": "Cheese burst",
+            "size": "Small",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Tomatoes",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Onions",
+                    "price": "0.50"
+                },
+                {
+                    "name": "Bell Pepper",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Mushrooms",
+                    "price": "1.20"
+                },
+                {
+                    "name": "Pineapple",
+                    "price": "0.75"
+                }
+            ]
+        },
+        {
+            "id": 30,
+            "name": "Tornado",
+            "init": "v",
+            "isVegetarian": "Veg",
+            "image": "2.png",
+            "price": 9,
+            "base": "Multigrain",
+            "type": "Cheese Topping",
+            "size": "Extra Large",
+            "quantity":1, "toppings": [
+                {
+                    "name": "Tomatoes",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Onions",
+                    "price": "0.50"
+                },
+                {
+                    "name": "Bell Pepper",
+                    "price": "1.00"
+                },
+                {
+                    "name": "Mushrooms",
+                    "price": "1.20"
+                },
+                {
+                    "name": "Pineapple",
+                    "price": "0.75"
+                }
+            ]
+        }
+    ]
+}

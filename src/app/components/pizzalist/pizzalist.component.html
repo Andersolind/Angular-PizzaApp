@@ -3,10 +3,10 @@
     <mat-spinner />
     } @else {
     <div class="albums-container">
-        @for (pizza of pizzas(); track pizza.id) {
+        @for (pizza of pizzas(); track $index) {
         <div>
             <mat-card>
-                <img [src]="pizza.image" [alt]="pizza.name" height="150" />
+                <img class="sm:w-32 sm:h-32 md:w-32 md:w-32 lg:w-32 lg:w-32" [src]="pizza.image" [alt]="pizza.name" />
                 <div class="album-content">
                     <div>
                         <mat-card-title>{{ pizza.name }}</mat-card-title>
@@ -16,23 +16,28 @@
                     </div>
 
                     <div class="album-info">
-                        <p>
-                            <strong>Toppings : </strong>
-                            @for(topping of pizza.toppings; track $index ){
-                            {{topping.name}}
-                            {{totalToppings(pizza)}}
-                            }
 
-                        </p>
+                        <strong>Toppings : </strong>
+                        <section>
+                            @for(topping of pizza.toppings; track $index ){
+                            <mat-checkbox (change)="toggle(pizza,topping,$event)" [checked]="topping.selected"
+                                class="example-margin">{{topping.name}}</mat-checkbox>
+                            }
+                        </section>
+
+
+
+
+
                         <P>With Toppings: {{this.toppingsTotal | currency}}</P>
                         <mat-card-subtitle>Final Price {{finalPrice | currency }}</mat-card-subtitle>
 
-                    </div> 
+                    </div>
                     <a (click)="addToCart(pizza)" mat-button color="primary" routerLink="/">
-                    Add
-                </a>
+                        Add
+                    </a>
                 </div>
-               
+
             </mat-card>
 
         </div>

@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 @Component({
   selector: 'ngrx-footer',
   standalone: true,
-  template: '<p>© 2024 NgRx Team</p>',
+  template: '<p>© 2024 Jonas Pizza </p>',
   styles: `
     :host {
       display: block;

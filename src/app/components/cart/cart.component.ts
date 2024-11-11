@@ -5,7 +5,7 @@ import { AppState } from './store/app.state';
 import { removeItem, incrementProduct } from './store/cart.actions';
 import { selectCartProducts, selectTotal } from './store/cart.selector';
 import { CartStore } from './store/cart.store';
-import { IPizza } from '@/shared/models/pizza.model';
+import { IDiscount, IPizza, OFFERS } from '@/shared/models/pizza.model';
 
 @Component({
   selector: 'app-cart',
@@ -19,10 +19,10 @@ export default class CartComponent {
   cartItems$ = this.store.select(selectCartProducts);
   totalPrice$ = this.store.select(selectTotal);
   cartStore = inject(CartStore);
-  isDiscount = false;
+  discountQuote!: IDiscount;
   constructor(private store: Store<AppState>) {
-  
-   }
+
+  }
 
   remove(productId: number) {
     this.store.dispatch(removeItem({ productId }));
@@ -39,21 +39,12 @@ export default class CartComponent {
     } else {
       this.cartStore.decrement(productId);
     }
-
-
   }
 
-
-  addDiscount(order:IPizza) :boolean {
-    //offer 1 
-    //Offer1 - 1 Medium Pizza with 2 topping = $5
-    this.isDiscount = this.cartStore.addDiscount(order)
-
-    return this.isDiscount;
-
-    // · Offer2 - 2 Medium Pizza with 4 topping each = $9
-
-  // · Offer3 – 1 Large with 4 toppings ( Peperoni and Barbecue chicken are counted as 2 toppings)- 50% discoun
+  addDiscount(order: IPizza): boolean {
+    this.discountQuote = this.cartStore.addDiscount(order);
+    this.discountQuote.type = this.discountQuote.type
+    return true;
   }
 }
 

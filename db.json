@@ -2,7 +2,7 @@
     "pizzas": [
         {
             "id": 11,
-            "name": "Mr. Nice",
+            "name": "Pesto Amore",
             "init": "v",
             "isVegetarian": "Veg",
             "image": "1.png",
@@ -35,7 +35,7 @@
         },
         {
             "id": 12,
-            "name": "Narco",
+            "name": "Creamy Mushroom Florentine",
             "init": "v",
             "isVegetarian": "Veg",
             "image": "2.png",
@@ -68,7 +68,7 @@
         },
         {
             "id": 13,
-            "name": "Bombasto",
+            "name": "Ultimate Pepperoni",
             "init": "n",
             "isVegetarian": "Non Veg",
             "image": "3.png",
@@ -93,7 +93,7 @@
         },
         {
             "id": 14,
-            "name": "Celeritas",
+            "name": "Pesto Amore",
             "init": "v",
             "isVegetarian": "Veg",
             "image": "4.png",
@@ -126,7 +126,7 @@
         },
         {
             "id": 15,
-            "name": "Magneta",
+            "name": "No Pepperoni",
             "init": "v",
             "isVegetarian": "Veg",
             "image": "5.png",
@@ -159,7 +159,7 @@
         },
         {
             "id": 16,
-            "name": "RubberMan",
+            "name": "Canadian Eh!",
             "init": "n",
             "isVegetarian": "Non Veg",
             "image": "6.png",
@@ -184,7 +184,7 @@
         },
         {
             "id": 17,
-            "name": "Dynama",
+            "name": "Classic Super",
             "init": "v",
             "isVegetarian": "Veg",
             "image": "7.png",
@@ -217,7 +217,7 @@
         },
         {
             "id": 18,
-            "name": "Dr IQ",
+            "name": "Pesto Amore",
             "init": "n",
             "isVegetarian": "Non Veg",
             "image": "8.png",
@@ -308,7 +308,7 @@
         },
         {
             "id": 21,
-            "name": "Mr. Nice",
+            "name": "Creamy Garlic Pizza",
             "init": "v",
             "isVegetarian": "Veg",
             "image": "1.png",
@@ -341,7 +341,7 @@
         },
         {
             "id": 22,
-            "name": "Narco",
+            "name": "Mediterranean Vegetarian",
             "init": "v",
             "isVegetarian": "Veg",
             "image": "2.png",
@@ -374,7 +374,7 @@
         },
         {
             "id": 23,
-            "name": "Bombasto",
+            "name": "Meat Supreme",
             "init": "n",
             "isVegetarian": "Non Veg",
             "image": "3.png",
@@ -399,7 +399,7 @@
         },
         {
             "id": 24,
-            "name": "Celeritas",
+            "name": "Pesto Amore",
             "init": "v",
             "isVegetarian": "Veg",
             "image": "4.png",
@@ -432,7 +432,7 @@
         },
         {
             "id": 25,
-            "name": "Magneta",
+            "name": "Meat Supreme",
             "init": "n",
             "isVegetarian": "Non Veg",
             "image": "5.png",
@@ -490,7 +490,7 @@
         },
         {
             "id": 27,
-            "name": "Dynama",
+            "name": "Garden Veggie",
             "init": "v",
             "isVegetarian": "Veg",
             "image": "7.png",
@@ -523,7 +523,7 @@
         },
         {
             "id": 28,
-            "name": "Dr IQ",
+            "name": "Mediterranean Vegetarian",
             "init": "n",
             "isVegetarian": "Veg",
             "image": "8.png",
@@ -556,7 +556,7 @@
         },
         {
             "id": 29,
-            "name": "Magma",
+            "name": "Creamy Garlic Pizza",
             "init": "v",
             "isVegetarian": "Veg",
             "image": "1.png",
@@ -589,7 +589,7 @@
         },
         {
             "id": 30,
-            "name": "Tornado",
+            "name": "Creamy Mushroom Florentine",
             "init": "v",
             "isVegetarian": "Veg",
             "image": "2.png",

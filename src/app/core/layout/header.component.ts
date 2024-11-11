@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'ngrx-header',
   standalone: true,
-  imports: [CommonModule,MatToolbar, RouterLink],
+  imports: [CommonModule, MatToolbar, RouterLink],
   template: `
    
    <mat-toolbar class="navbar" >
@@ -20,12 +20,6 @@ import { CommonModule } from '@angular/common';
       <button mat-button routerLink="/home" routerLinkActive="active" disableRipple='false'>Home</button>
      
       <span  class="fill"></span>
-      <button routerLink="/cart" class="text-gray-600 dark:text-gray-300 hover:underline">Cart
-            <span>{{cartStore.pizzas().length}}</span></button>
-
-          <!-- Add more navigation items here -->
-        
-      <button mat-button routerLink="/cart" routerLinkActive="active" disableRipple='false'>Cart</button>
   </mat-toolbar>
   `,
   styles: `
@@ -54,7 +48,7 @@ export class HeaderComponent {
   cartStore = inject(CartStore);
   products$: Observable<IPizza[]>;
   constructor(private store: Store<AppState>) {
-   
+
     this.products$ = this.store.select(selectCartProducts);
   }
 }

@@ -109,7 +109,7 @@ export class PizzalistComponent {
               updateToppings.selected = false
             }
           })
-          //clear pizza 
+     
 
           //remove the whole order
           let removeOrder = this.addedPizza.indexOf(pizza)
@@ -120,9 +120,6 @@ export class PizzalistComponent {
             }
           }
         }
-      }
-      else {
-        //remove the pizza!
       }
     }
   }
@@ -138,27 +135,10 @@ export class PizzalistComponent {
     // add selected toppings
     const idXPizza = this.addedPizza.indexOf(product);
     if (idXPizza <= -1) {
-      //Add please add  toppings
-
+  
       this.openSnackBar();
     } else {
       this.handleAdd.emit(this.addedPizza[idXPizza]);
     }
-
-
   }
-
-
-
-
-  //   applyDiscount(pizza:IPizza){
-
-  //     const 
-  //     if()
-  //     · Offer1 - 1 Medium Pizza with 2 topping = $5
-
-  // · Offer2 - 2 Medium Pizza with 4 topping each = $9
-
-  // · Offer3 – 1 Large with 4 toppings ( Peperoni and Barbecue chicken are counted as 2 toppings)- 50% discoun
-  //   }
 }

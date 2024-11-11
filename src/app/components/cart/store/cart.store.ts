@@ -7,17 +7,20 @@ import {
   withState,
 } from '@ngrx/signals';
 
-import { Injectable, computed } from '@angular/core';
+import { computed } from '@angular/core';
 import { calculateTotalPrice } from '@/components/cart/store/cart.reducer';
-import { IPizza } from '@/shared/models/pizza.model';
+import { IDiscount, IPizza, OFFERS } from '@/shared/models/pizza.model';
 
 export interface CartState {
   pizzas: IPizza[];
+  discount: IDiscount[]
 }
 
 const initialCartState: CartState = {
   pizzas: [],
+  discount: []
 };
+
 
 export const CartStore = signalStore(
   { providedIn: 'root' },
@@ -28,7 +31,7 @@ export const CartStore = signalStore(
   withMethods(({ pizzas, ...store }) => ({
     addToCart(product: IPizza) {
       const updatedProduct = [...pizzas(), product];
-      patchState(store, { pizzas: updatedProduct });
+      patchState(store, { pizzas: updatedProduct },);
     },
     removeItem(id: number) {
       const updatedProduct = pizzas().filter((a) => a.id !== id);
@@ -51,14 +54,41 @@ export const CartStore = signalStore(
       );
       patchState(store, { pizzas: updatedProduct });
     },
-    addDiscount(order: IPizza): boolean {
-      //Offer1 - 1 Medium Pizza with 2 topping = $5
+    addDiscount(order: IPizza): IDiscount {
 
-      const offerOne: boolean = false;
-      if (order.quantity === 1 && order.toppings.length >= 2) {
-        return true
+      let discountConfig: IDiscount = { type: OFFERS.NOOFFER, discount: 0,price:0 }
+
+      if (order.quantity === 1 && order.size === 'Medium' && order.toppings.length >= 2) {
+        discountConfig = {
+          type: OFFERS.OFFERONE,
+          discount: 5,
+          price:0
+        }
+     //   return discountConfig;
       }
-      return false;
+      if (order.quantity === 2 && order.size === 'Medium' && order.toppings.length >= 4) {
+        discountConfig = {
+          type: OFFERS.OFFERTWO,
+          discount: 9,
+          price:0
+        }
+      }
+      const offer3Quote = order.quantity === 1 && order.size === 'Large' && order.toppings.filter(extraToppings => {
+        extraToppings.name === 'Pepperoni' && extraToppings.selected === true
+      });
+      const offer4Quote = order.quantity === 1 && order.size === 'Large' && order.toppings.filter(extraToppings => {
+        extraToppings.name === 'Barbecue Chicken' && extraToppings.selected === true
+      });
+
+      if (offer3Quote && offer4Quote) {
+        discountConfig = {
+          type: OFFERS.OFFERTHREE,
+          discount: 100,
+          price: 0
+        }
+      }
+      return discountConfig;
     }
+
   }))
 );

@@ -2,48 +2,53 @@
     @if (showSpinner()) {
     <mat-spinner />
     } @else {
-    <div class="albums-container">
-        @for (pizza of pizzas(); track $index) {
-        <div>
-            <mat-card>
-                <img class="sm:w-32 sm:h-32 md:w-32 md:w-32 lg:w-32 lg:w-32" [src]="pizza.image" [alt]="pizza.name" />
-                <div class="album-content">
-                    <div>
-                        <mat-card-title>{{ pizza.name }}</mat-card-title>
-                        <p><strong>Size:</strong> {{ pizza.size }}</p>
-                        <mat-card-subtitle>Price {{ pizza.price | currency }}</mat-card-subtitle>
-                        <mat-card-subtitle> {{ pizza.pizza| currency }}</mat-card-subtitle>
-                    </div>
-
-                    <div class="album-info">
-
-                        <strong>Toppings : </strong>
+    <div class="flex items-center bg-indigo-100 w-screen min-h-screen" style="font-family: 'Muli', sans-serif;">
+        <div class="container ml-auto mr-auto flex flex-wrap items-start">
+            @for (pizza of pizzas(); track $index) {
+         
+            <div class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+                <div
+                    class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                    <figure class="mb-2">
+                        <img  [src]="pizza.image" [alt]="pizza.name"  alt="" class="h-64 ml-auto mr-auto" />
+                    </figure>
+                    <div class="rounded-lg p-4 bg-black flex flex-col">
+                        <div>
+                            <h5 class="text-white text-2xl font-bold leading-none">
+                                {{ pizza.name }}
+                            </h5>
+                            <span class=" text-white leading-none">
+                            <p><strong>Size:</strong> {{ pizza.size }}</p>
+                            <mat-card-title> {{ pizza.pizza }}</mat-card-title>
+                            <mat-card-title>{{pizza.type}}</mat-card-title>
+                        </span>
+                        <strong class="text-white">Choose your Toppings:</strong>
                         <section>
                             @for(topping of pizza.toppings; track $index ){
-                            <mat-checkbox (change)="toggle(pizza,topping,$event)" [checked]="topping.selected"
-                                class="example-margin">{{topping.name}}</mat-checkbox>
+                            <mat-checkbox class="text-white" (change)="toggle(pizza,topping,$event)" [checked]="topping.selected"
+                                ><span class="text-white">{{topping.name}}</span></mat-checkbox>
                             }
                         </section>
-
-
-
-
-
-                        <P>With Toppings: {{this.toppingsTotal | currency}}</P>
-                        <mat-card-subtitle>Final Price {{finalPrice | currency }}</mat-card-subtitle>
-
+                        </div>
+                        <div class="flex items-center">
+                            <div class="text-lg text-white font-light">
+                                {{ pizza.price | currency }}
+                            </div>
+                            <button (click)="addToCart(pizza)"  href="javascript:;"
+                                class="rounded-full bg-red-900 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-auto transition duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="stroke-current m-auto">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <a (click)="addToCart(pizza)" mat-button color="primary" routerLink="/">
-                        Add
-                    </a>
                 </div>
-
-            </mat-card>
-
+            </div>
+            }
         </div>
-
-
-        }
     </div>
     }
 </div>

@@ -17,11 +17,12 @@
               <h3 class="text-lg font-semibold leading-snug sm:pr-8">
                 {{item.name}}
               </h3>
-             
+
               @if(addDiscount(item)){
-                <button mat-raised-button >Show Offer!</button>
+              <button mat-raised-button>{{discountQuote.type}}</button>
+              
               }
-            
+
             </div>
             <div class="text-right">
               <p class="text-lg font-semibold">Size:{{item.size}}</p>
@@ -76,6 +77,9 @@
     }
   </ul>
   <div class="space-y-1 text-right">
+    <p>
+      Discount Applied
+    </p>
     <p>
       Total amount:<span class="font-semibold"> {{cartStore.totalPrice() | currency}}</span>
     </p>

@@ -12,10 +12,10 @@ import CartComponent from "../../components/cart/cart.component";
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [AsyncPipe, HeaderComponent,MatSidenavModule, MatSidenav,FooterComponent, PizzalistComponent, HeaderComponent, CartComponent],
+  imports: [AsyncPipe, HeaderComponent, MatSidenavModule, MatSidenav, FooterComponent, PizzalistComponent, HeaderComponent, CartComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
-  providers:[PizzaSearchStore,CartStore]
+  providers: [PizzaSearchStore, CartStore]
 })
 export default class HomeComponent {
   readonly store = inject(PizzaSearchStore);

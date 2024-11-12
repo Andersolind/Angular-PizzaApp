@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'ngrx-footer',
+  selector: 'app-footer',
   standalone: true,
   template: '<p>© 2024 Jonas Pizza </p>',
   styles: `

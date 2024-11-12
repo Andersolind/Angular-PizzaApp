@@ -10,15 +10,13 @@ import { IPizza } from '@/shared/models/pizza.model';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'ngrx-header',
+  selector: 'app-header',
   standalone: true,
   imports: [CommonModule, MatToolbar, RouterLink],
-  template: `
-   
+  template: ` 
    <mat-toolbar class="navbar" >
     <img src="PizzeriaLogo.png" class="logo-image">
       <button mat-button routerLink="/home" routerLinkActive="active" disableRipple='false'>Home</button>
-     
       <span  class="fill"></span>
   </mat-toolbar>
   `,

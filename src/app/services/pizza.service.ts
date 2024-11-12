@@ -19,6 +19,5 @@ export class PizzaService {
     return this.#http.get<IPizza[]>(API_URL, { params: { id } });
   }
   
-
   constructor() { }
 }

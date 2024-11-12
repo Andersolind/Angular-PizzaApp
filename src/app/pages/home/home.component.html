@@ -1,19 +1,15 @@
-<ngrx-header />
+<app-header />
 <div>
   <mat-sidenav-container>
     <mat-sidenav #sidenav mode="side">
       <app-cart />
     </mat-sidenav>
-
     <mat-sidenav-content>
-
       <span class="text-3xl"><button mat-button (click)="sidenav.toggle()">CHECKOUT-{{cartStore.pizzas().length}}</button></span>
       <app-pizzalist [pizzas]="store.filteredAlbums()" [showSpinner]="store.showSpinner()"
         (handleAdd)="addItemToCart($event)" />
 
     </mat-sidenav-content>
   </mat-sidenav-container>
-
-
 </div>
-<ngrx-footer />
+<app-footer />
